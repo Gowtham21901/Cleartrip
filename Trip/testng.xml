@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="1" parallel="tests">
+<parameter name="Url" value="https://www.khanacademy.org/"></parameter>
+  <parameter name="Url" value="https://www.cleartrip.com/"></parameter>
+  
+   <test thread-count="5" name="Test Chrome" parallel="classes">
+  <parameter name="Browser" value="Chrome"></parameter>
+  <classes>
+ <!--   <class name="com.qa.testscripts."></class> -->
+  <class name="com.qa.testscripts.Tc_Tripsearch_001"></class>
+  </classes>
+  </test>
+  
+  
+</suite> <!-- Suite -->

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="Url" value="https://www.cleartrip.com/"/>
+  <test thread-count="1" parallel="classes" name="Test Chrome(failed)">
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="com.qa.testscripts.Tc_Tripsearch_001">
+        <methods>
+          <include name="setUp"/>
+          <include name="getTest" invocation-numbers="1 2 3"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.testscripts.Tc_Tripsearch_001 -->
+    </classes>
+  </test> <!-- Test Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
